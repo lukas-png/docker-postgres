@@ -1,0 +1,9 @@
+FROM postgres:alpine
+
+set -e
+
+psql <<SQL
+	CREATE USER admin WITH PASSWORD '12345';
+	CREATE DATABASE first OWNER admin;
+SQL
+
