@@ -1,0 +1,1 @@
+docker run -dp 5433:5433 PostGres
